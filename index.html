@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/general.css">
+    <style>
+         @media screen and (max-width: 768px) {
+            .navbar ul {
+                text-align: left;
+            }
+
+            .navbar ul li {
+            display: inline-block;
+                margin: 0 10px;
+            }
+
+            .me {
+                padding: 15px;
+                margin-top: 20px;
+            }
+
+            #jpg1 {
+                width: 100%;
+            }
+
+            h1.head {
+                font-size: 26px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .navbar ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .me {
+                padding: 10px;
+            }
+
+            #jpg1 {
+                width: 100%;
+                margin: 15px auto;
+            }
+
+            h1.head {
+                font-size: 22px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="head">HOME</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./html/aboutme.html">About Me</a></li>
+                    <li><a href="./html/socials.html">Socials</a></li>
+                    <li><a href="./html/hobbies.html">Hobbies</a></li>
+                    <li><a href="./html/photos.html">Photos</a></li>
+                </ul>
+            </nav>
+    </div> 
+
+    <section class="me">
+        <h1>Hi, I’m Josh Wyatt – A future Web Developer</h1>
+        <p>I hope to create working webpages to benefit people around the world.</p>
+    </section>
+
+    <img 
+        src="./images/1golf.jpg"
+        alt="Josh Golfing"
+        sizes="(max-width: 600px) 100vw, 600px" 
+        id="jpg1">
+</body>
+</html>
