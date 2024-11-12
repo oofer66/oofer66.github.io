@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <style>
+      @media screen and (max-width: 768px) {
+        .photos {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .navbar ul li {
+          display: block;
+          margin: 10px 0;
+        }
+
+        .photos {
+          grid-template-columns: 1fr;
+        }
+
+        h1.head, h1 {
+          font-size: 24px;
+        }
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="head">PHOTOS</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./aboutme.html">About Me</a></li>
+                    <li><a href="./socials.html">Socials</a></li>
+                    <li><a href="./hobbies.html">Hobbies</a></li>
+                    <li><a href="photos.html">Photos</a></li>
+                </ul>
+            </nav>
+    </div>
+
+    <div class="container">
+        <h1>My Photo Gallery</h1>
+    
+        <div class="photos">
+          <div class="photo-item">
+            <img src="../images/2.jpg" alt="Rubiks Cubes">
+          </div>
+    
+          <div class="photo-item">
+            <img src="../images/3.jpg" alt="Josh on the right side">
+          </div>
+    
+          <div class="photo-item">
+            <img src="../images/4.jpg" alt="My Cat">
+          </div>
+        </div>
+      </div>
+</body>
+</html>
